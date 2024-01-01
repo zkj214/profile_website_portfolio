@@ -1,4 +1,4 @@
-from flask import Flask,render_template, url_for, request,redirect, flash
+from flask import Flask,render_template, url_for, request, flash
 from flask_bootstrap import Bootstrap5
 from datetime import date
 import smtplib
