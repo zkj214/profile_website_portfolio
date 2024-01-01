@@ -31,7 +31,7 @@ def send_email(name,email,message):
         email_msg=f"Subject:New Message\n\nName: {name}\nEmail: {email}\nMessage: {message}"
         connection.starttls()
         connection.login(EMAIL,APP_PASSWORD)
-        connection.sendmail(from_addr=email,to_addrs=EMAIL,msg=email_msg)
+        connection.sendmail(from_addr=EMAIL,to_addrs=EMAIL,msg=email_msg)
 
 
 if __name__=="__main__":
